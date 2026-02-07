@@ -1,18 +1,21 @@
-# MNIST-ANN-classic | Kézzel írott számok felismerése | IT Betyár
+# MNIST-ANN-classic | Kézzel írott számok felismerése
 Canonical Basic Neural Network - itbetyar.hu
 
 <img src="https://raw.githubusercontent.com/itbetyar/MNIST-ANN-classic/refs/heads/main/img-assets/mnist-demo.webp" alt="MNIST Demo" width="350">
+
+| IT Betyár Demo | GitHub Repository | Hugging Face Demo | AI Tanfolyam |
+| :---: | :---: | :---: | :---: |
+| [![🚀 IT Betyár Demo](https://img.shields.io/badge/🚀_IT_Betyár-Demo_MNIST-orange)](https://itbetyar.hu/project/mnist-karakter-felismero-projekt/) | [![GitHub](https://img.shields.io/badge/GitHub-MNIST_Repo-f0f0f0?logo=github&logoColor=black)](https://github.com/itbetyar/MNIST-Classification) | [![🤗 Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-MNIST_Space-FFD21E)](https://huggingface.co/spaces/itbetyar/2-MNIST-Classifier) | [![🎓 AI Tanfolyam](https://img.shields.io/badge/🎓_AI_Tanfolyam-itbetyar.hu-28a745)](https://itbetyar.hu/mesterseges-intelligencia-fejleszto-tanfolyam/) |
 
 
 ## 📖 Leírás
 Ez a projekt egy **alapszintű Artificial Neural Network (ANN)** hálót használ kézzel írott számjegyek (0-9) osztályozására. A modell az MNIST adatbázison tanul, amely 70,000 db 28x28 pixeles képet tartalmaz.
 
-🔗 **Élő demo projektleírás:** [itbetyar.hu/project/mnist-ann-classification](https://itbetyar.hu/project/mnist-ann-classification/)
+🔗 **Élő demo projektleírás >>**  [![🚀 IT Betyár Demo](https://img.shields.io/badge/🚀_IT_Betyár-Demo_MNIST-orange)](https://itbetyar.hu/project/mnist-karakter-felismero-projekt/) 
 
 ## 🎯 Funkciók
 - **10 számjegy felismerése** (0-9) - MNIST adatbázis alapján
-- **Valós idejű predikció** - Rajzolj egy számot és azonnal látod az eredményt
-- **Egyszerű felület** - Gradio/Streamlit alapú webes interfész
+- **Egyszerű felület** - Gradio alapú GUI interfész
 - **Példa számjegyek** - Tesztképek azonnali kipróbáláshoz
 
 ## 🧠 Modell részletek
@@ -22,10 +25,10 @@ Ez a projekt egy **alapszintű Artificial Neural Network (ANN)** hálót haszná
 | **Modell típus** | ANN - Mesterséges Neurális Háló (Fully Connected) |
 | **Rétegszám** | 3 réteg (input, hidden, output) |
 | **Paraméterek** | ~100,000 paraméter |
-| **Modell fájlméret** | ~400 KB |
+| **Modell fájlméret** | ~1.4 MB |
 | **Tanító adatszett** | MNIST (60,000 tanító, 10,000 teszt kép) |
 | **Aktivációs függvény** | ReLU (hidden), Softmax (output) |
-| **Pontosság** | ~97-98% teszt adaton |
+| **Pontosság** | ~97-98% a teszt adaton |
 
 ### ANN architektúra
 <img src="https://raw.githubusercontent.com/itbetyar/MNIST-ANN-classic/refs/heads/main/img-assets/ann-architecture.webp" alt="ANN Architecture" width="350">
@@ -79,60 +82,6 @@ Ez a projekt egy **alapszintű Artificial Neural Network (ANN)** hálót haszná
 
 Az MNIST az egyik legismertebb benchmark adatbázis a gépi tanulásban. Minden kezdő data scientist ezen tanulja meg a neurális hálók alapjait.
 
-## 🛠️ Telepítés és futtatás
-### Követelmények
-- Python 3.11
-- pip package manager
-
-### Függőségek telepítése
-```bash
-pip install -r requirements.txt
-```
-
-**requirements.txt tartalma:**
-```
-tensorflow==2.15.0
-# VAGY
-torch==2.10.0
-numpy==1.26.0
-gradio==5.9.1
-# VAGY
-streamlit==1.40.0
-```
-
-### Alkalmazás indítása
-```bash
-python app.py
-```
-
-A Gradio/Streamlit interfész automatikusan elindul a böngészőben (általában `http://localhost:7860`).
-
-## 📁 Projekt struktúra
-```
-.
-├── app.py                 # Fő alkalmazás
-├── model.py              # Modell definíció és betöltés
-├── train.py              # Modell tanítási script (opcionális)
-├── requirements.txt      # Python függőségek
-├── mnist_model.h5        # Betanított modell
-├── img-assets/           # README képek
-└── README.md
-```
-
-## 💻 Használat
-1. **Rajzolj egy számot** a vászonra (0-9 között)
-2. **Predikció** - A modell azonnal felismeri a számjegyet
-3. **Eredmény** - Látod a predikciót és a valószínűségi értékeket
-4. **Törlés** - Próbálj újabb számokat
-
-## 🎓 Oktatási célok
-Ez a projekt az **IT Betyár Mesterséges Intelligencia Fejlesztő Tanfolyam** része, amely bemutatja:
-
-- Neurális hálók alapjai (ANN)
-- MNIST adatbázis használata
-- TensorFlow/PyTorch alapok
-- Modell tanítás és értékelés
-- AI alkalmazások deployment-je
 
 🔗 **Tanfolyam:** [itbetyar.hu/mesterseges-intelligencia-fejleszto-tanfolyam](https://itbetyar.hu/mesterseges-intelligencia-fejleszto-tanfolyam/)
 
@@ -140,17 +89,7 @@ Ez a projekt az **IT Betyár Mesterséges Intelligencia Fejlesztő Tanfolyam** r
 Az alkalmazás elérhető Hugging Face Spaces-en / Streamlit Cloud-on:
 - **Demo URL:** [https://huggingface.co/spaces/itbetyar/mnist-ann-classifier](https://huggingface.co/spaces/itbetyar/mnist-ann-classifier)
 
-## 📊 Tanítási eredmények
-```
-Epoch 1/10 - Loss: 0.35, Accuracy: 89%
-Epoch 5/10 - Loss: 0.12, Accuracy: 96%
-Epoch 10/10 - Loss: 0.08, Accuracy: 97.5%
 
-Test Accuracy: 97.8%
-```
-
-## 📝 License
-MIT License - lásd a [LICENSE](LICENSE) fájlt a részletekért.
 
 ## 👨‍💻 Szerző
 **IT Betyár**  
@@ -160,5 +99,10 @@ MIT License - lásd a [LICENSE](LICENSE) fájlt a részletekért.
 ---
 
 ⭐ Ha tetszik a projekt, adj neki egy csillagot a GitHub-on!
+
+| IT Betyár Demo | GitHub Repository | Hugging Face Demo | AI Tanfolyam |
+| :---: | :---: | :---: | :---: |
+| [![🚀 IT Betyár Demo](https://img.shields.io/badge/🚀_IT_Betyár-Demo_MNIST-orange)](https://itbetyar.hu/project/mnist-karakter-felismero-projekt/) | [![GitHub](https://img.shields.io/badge/GitHub-MNIST_Repo-f0f0f0?logo=github&logoColor=black)](https://github.com/itbetyar/MNIST-Classification) | [![🤗 Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-MNIST_Space-FFD21E)](https://huggingface.co/spaces/itbetyar/2-MNIST-Classifier) | [![🎓 AI Tanfolyam](https://img.shields.io/badge/🎓_AI_Tanfolyam-itbetyar.hu-28a745)](https://itbetyar.hu/mesterseges-intelligencia-fejleszto-tanfolyam/) |
+
 
 **Frissítve:** 2026.02
