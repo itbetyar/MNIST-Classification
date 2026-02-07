@@ -1,0 +1,29 @@
+#main-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+p a {
+    color: #57a1a9; /* Same as button background color */
+    font-weight: bold; /* Makes the link text bold */
+}
+
+/* Hover state */
+p a:hover {
+    color: #345e63; /* Same as hover background color for the button */
+    text-decoration: underline; /* Underlines the link on hover */
+}
+
+
+.custom-button {
+    background-color: #57a1a9;  /* Green background */
+    color: white;               /* White text */
+    padding: 10px 20px;         /* Padding */
+    border: none;               /* No border */
+    cursor: pointer;            /* Pointer cursor */
+    font-size: 16px;            /* Font size */
+}
+.custom-button:hover {
+    background-color: #345e63;  
+}
+
