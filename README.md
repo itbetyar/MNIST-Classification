@@ -1,7 +1,9 @@
 # MNIST-ANN-classic | Kézzel írott számok felismerése
 Canonical Basic Neural Network - itbetyar.hu
 
-<img src="https://raw.githubusercontent.com/itbetyar/MNIST-ANN-classic/refs/heads/main/img-assets/mnist-demo.webp" alt="MNIST Demo" width="350">
+<img src="https://raw.githubusercontent.com/itbetyar/MNIST-Classification/refs/heads/main/mnist_img.webp" alt="MNIST Demo" width="350">
+
+⭐ Ha tetszik a projekt, adj neki egy csillagot a GitHub-on!
 
 | IT Betyár Demo | GitHub Repository | Hugging Face Demo | AI Tanfolyam |
 | :---: | :---: | :---: | :---: |
@@ -11,7 +13,7 @@ Canonical Basic Neural Network - itbetyar.hu
 ## 📖 Leírás
 Ez a projekt egy **alapszintű Artificial Neural Network (ANN)** hálót használ kézzel írott számjegyek (0-9) osztályozására. A modell az MNIST adatbázison tanul, amely 70,000 db 28x28 pixeles képet tartalmaz.
 
-🔗 **Élő demo projektleírás >>**  [![🚀 IT Betyár Demo](https://img.shields.io/badge/🚀_IT_Betyár-Demo_MNIST-orange)](https://itbetyar.hu/project/mnist-karakter-felismero-projekt/) 
+🔗 **Élő demo és projektleírás >>**  [![🚀 IT Betyár Demo](https://img.shields.io/badge/🚀_IT_Betyár-Demo_MNIST-orange)](https://itbetyar.hu/project/mnist-karakter-felismero-projekt/) 
 
 ## 🎯 Funkciók
 - **10 számjegy felismerése** (0-9) - MNIST adatbázis alapján
@@ -23,7 +25,7 @@ Ez a projekt egy **alapszintű Artificial Neural Network (ANN)** hálót haszná
 | Paraméter | Érték |
 |-----------|-------|
 | **Modell típus** | ANN - Mesterséges Neurális Háló (Fully Connected) |
-| **Rétegszám** | 3 réteg (input, hidden, output) |
+| **Rétegszám** | 4 réteg (input, 2hidden, output) |
 | **Paraméterek** | ~100,000 paraméter |
 | **Modell fájlméret** | ~1.4 MB |
 | **Tanító adatszett** | MNIST (60,000 tanító, 10,000 teszt kép) |
@@ -31,7 +33,7 @@ Ez a projekt egy **alapszintű Artificial Neural Network (ANN)** hálót haszná
 | **Pontosság** | ~97-98% a teszt adaton |
 
 ### ANN architektúra
-<img src="https://raw.githubusercontent.com/itbetyar/MNIST-ANN-classic/refs/heads/main/img-assets/ann-architecture.webp" alt="ANN Architecture" width="350">
+<img src="https://raw.githubusercontent.com/itbetyar/MNIST-Classification/refs/heads/main/mnist_architecture.webp" alt="ANN Architecture" width="350">
 
 ### Mai viszonyítás
 <table>
@@ -71,8 +73,6 @@ Ez a projekt egy **alapszintű Artificial Neural Network (ANN)** hálót haszná
   </tbody>
 </table>
 
-### Neurális háló struktúra
-<img src="https://raw.githubusercontent.com/itbetyar/MNIST-ANN-classic/refs/heads/main/img-assets/mnist-network-structure.webp" alt="Network Structure" width="500">
 
 **Összefoglalva:** Az MNIST ANN a legklasszikusabb "Hello World" példa a neurális hálók világában - egyszerű, hatékony, és tökéletes az alapok megtanulásához! 🎯
 
