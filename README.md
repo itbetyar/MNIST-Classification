@@ -86,8 +86,8 @@ Az MNIST az egyik legismertebb benchmark adatbázis a gépi tanulásban. Minden 
 🔗 **Tanfolyam:** [itbetyar.hu/mesterseges-intelligencia-fejleszto-tanfolyam](https://itbetyar.hu/mesterseges-intelligencia-fejleszto-tanfolyam/)
 
 ## 🌐 Deployment
-Az alkalmazás elérhető Hugging Face Spaces-en / Streamlit Cloud-on:
-- **Demo URL:** [https://huggingface.co/spaces/itbetyar/mnist-ann-classifier](https://huggingface.co/spaces/itbetyar/mnist-ann-classifier)
+Az alkalmazás elérhető Hugging Face Spaces-en:
+- **Demo URL:** [https://huggingface.co/spaces/itbetyar/2-MNIST-Classifier](https://huggingface.co/spaces/itbetyar/2-MNIST-Classifier)
 
 
 
